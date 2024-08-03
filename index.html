@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mits</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0;
+        }
+
+        .container {
+            border: 2px solid black;
+            display: flex;
+            position: relative;
+            align-items: center;
+
+
+        }
+
+        .name {
+            font-size: small;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 90px;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 4rem;
+            width: 100%;
+            background-color: #063978;
+            margin-top: 30px;
+        }
+
+        .box1 {
+            /* display: flex;
+            align-items: center;
+            text-align: center; */
+            display: block;
+            padding-left: 421px;
+            padding-right: 70px;
+            margin: 7px;
+        }
+
+        .card:hover {
+            background-position-x: left;
+            background-color: rgb(21, 95, 65);
+            font-style: oblique 10deg;
+            rotate: -20deg;
+            box-shadow: 10px 5px 5px rgb(48, 88, 132);
+        }
+
+
+
+
+        .small {
+            font-size: 20px;
+            color: #063978;
+
+
+        }
+
+        .white {
+            color: white;
+            display: inline-block;
+            padding-left: 498px;
+            font-size: large;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .content {
+            display: flex;
+            border: 2px solid black;
+            text-align: center;
+            align-items: center;
+        }
+
+        .select {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+
+        }
+
+        .select li {
+            list-style: none;
+        }
+
+        .cont {
+            display: flex;
+            height: 300px;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            column-gap: 40px;
+            flex-wrap: wrap;
+
+
+
+        }
+
+        .card {
+
+            height: 240px;
+            width: 250px;
+            justify-content: center;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+
+        .card-img1 {
+            background-color: aqua;
+            height: 150px;
+            width: 250px;
+            background-image: url('istockphoto-1364769258-1024x1024.jpg');
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .card-img2 {
+            background-color: aqua;
+            height: 150px;
+            width: 250px;
+            background-image: url('istockphoto-1474313439-1024x1024.jpg');
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .card-img3 {
+            background-color: aqua;
+            height: 150px;
+            width: 250px;
+            background-image: url('istockphoto-1366475366-1024x1024.jpg');
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        .text {
+            color: rgb(13, 93, 93);
+            background-color: bisque;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .text1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .end {
+            height: 200px;
+            width: 100%;
+            background-color: #063978;
+
+            margin-top: 230px;
+            margin-bottom: 0px;
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+
+
+
+
+        }
+
+        .rect1,
+        .rect3 {
+           
+            height: 240px;
+            width: 23%;
+            margin-top: 10px;
+            color: white;
+            border-radius: 5px;
+
+
+        }
+
+        .rect3 {
+            color: white;
+            padding-left: 30px;
+        }
+
+        /* for moving text */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .text-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 50px;
+            
+            border: 1px solid #ccc;
+        }
+
+        .textmov {
+            white-space: nowrap;
+            position: absolute;
+            left: 100%;
+            /* Initially move the text outside the container */
+            animation: slide 15s linear infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                left: 100%;
+            }
+
+            100% {
+                left: -100%;
+            }
+        }
+
+        /* footer */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="mits-logo.png" alt="logo">
+
+        </div>
+        <div class="name">
+            <h1>MADHAV INSTITUTE OF TECHNOLOGY & SCIENCE, GWALIOR (M.P.), INDIA
+                <br>
+                माधव प्रौद्योगिकी एवं विज्ञान संस्थान, ग्वालियर (म.प्र.), भारत
+                <br>
+                <span class="small">A Govt. Aided UGC Autonomous Institute, Affiliated to R.G.P.V. BHOPAL (M.P.),
+                    INDIA</span>
+            </h1>
+            <br>
+        </div>
+
+    </div>
+    <div class="box">
+        <div class="white">Centre for Artificial Intelligence</div>
+    </div>
+
+
+    <div class="box1">
+        <h1 class="box1-c">CHOOSE YOUR BRANCH</h1>
+    </div>
+ <!-- middle section -->
+    </div>
+    <section class="cont">
+        <div class="card">
+            <div class="card-img1">
+
+            </div>
+            <h2 class="text1">
+                <a class="text" href="air.html">AIR</a>
+
+
+            </h2>
+        </div>
+        <div class="card">
+            <div class="card-img2">
+
+            </div>
+            <h2 class="text2">
+                <a class="text" href="aiml.html">AIML</a>
+            </h2>
+        </div>
+        <div class="card">
+            <div class="card-img3">
+
+            </div>
+            <h2 class="text3">
+                <a class="text" href="aids.html">AIDS</a>
+            </h2>
+        </div>
+    </section>
+    <!-- endbar -->
+    <section class="end">
+        <div class="rect1">
+            <div>IMPORTANT LINKS</div>
+            <ul>
+                <li> Download </li>
+                <li>All Tenders</li>
+                <li>NIRF(National Institutional Ranking Framework)</li>
+                <li>NPTEL/Local Chapter</li>
+                <li>Online Application form for No Dues</li>
+                <li>AICTE</li>
+            </ul>
+        </div>
+        <div class="rect3">
+            <h2>GET IN TOUCH</h2>
+            <div class="add">Madhav Institute of Technology & Science (MITS), Gola ka Mandir, Gwalior - 474005, Madhya
+                Pradesh, India</div>
+
+
+        </div>
+    </section>
+
+</body>
+
+</html>
